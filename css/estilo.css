@@ -64,3 +64,79 @@ h3 {
 #recursos h5 {
     color: #9bf0e1;
 }
+
+/* Efeito de opacidade e legenda nas imagens */
+#servicos img {
+    transition: opacity 0.4s;
+}
+
+#servicos .col-lg-6 img:hover {
+    opacity: 0.6;
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+#servicos .item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Movimento da imagem */
+#servicos .item img {
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+/* Imagem aumenta e fica transparente */
+#servicos .item:hover img {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+/* Legenda sobre a imagem */
+#servicos .legenda {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+/* Legenda aparece ao passar o mouse */
+#servicos .item:hover .legenda {
+    opacity: 1;
+}
+
+/* Efeito de opacidade e legenda */
+#servicos .item {
+    position: relative;
+    overflow: hidden;
+}
+
+#servicos .item img {
+    transition: opacity 0.4s;
+}
+
+#servicos .item:hover img {
+    opacity: 0.6;
+}
+
+/* Legenda sobre a imagem */
+#servicos .legenda {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+#servicos .item:hover .legenda {
+    opacity: 1;
+}
