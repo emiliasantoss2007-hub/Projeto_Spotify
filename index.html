@@ -194,11 +194,13 @@
           <div class="row rotacionar">
 
             <div class="col-lg-6">
-              <img src="imagens/iphone1.png" class="img-fluid" alt="">
+              <img src="imagens/iphone1.png" id="foto1" class="img-fluid" alt="">
+
             </div>
 
             <div class="col-lg-6">
-              <img src="imagens/iphone2.png" class="img-fluid" alt="">
+             <img src="imagens/iphone2.png" id="foto2" class="img-fluid" alt="">
+
             </div>
 
           </div>
@@ -265,6 +267,27 @@
   </footer><!--/fim rodapé -->
 
   <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const foto1 = document.getElementById("foto1");
+    const foto2 = document.getElementById("foto2");
+
+    foto1.addEventListener("mouseover", function() {
+        foto1.src = "imagens/iphone2.png";
+    });
+
+    foto1.addEventListener("mouseout", function() {
+        foto1.src = "imagens/iphone1.png";
+    });
+
+    foto2.addEventListener("mouseover", function() {
+        foto2.src = "imagens/iphone1.png";
+    });
+
+    foto2.addEventListener("mouseout", function() {
+        foto2.src = "imagens/iphone2.png";
+    });
+</script>
 </body>
 
 </html>
